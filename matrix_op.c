@@ -34,3 +34,15 @@ void mat_print(int A[SIZE][SIZE]){
         printf("\n");
     }
 }
+
+void mat_mul(int A[SIZE][SIZE],int B[SIZE][SIZE],int R[SIZE][SIZE]){
+    for (int i = 0;i<SIZE;i++){
+        for(int j=0;j<SIZE;j++){
+            int sum = 0;
+            for (int k = 0; k < SIZE; k++) {  
+                sum += A[i][k] * B[k][j];
+            }
+            R[i][j] = sum;
+        }
+    }   
+}
