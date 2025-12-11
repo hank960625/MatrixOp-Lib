@@ -27,5 +27,11 @@ int main(void)
     mat_sub(A, B, R);
     mat_print(R);
 
+    printf("\n");
+
+    printf("A mulelm B =\n");
+    mat_mulelm(A, B, R);
+    mat_print(R);
+
     return 0;
 }
