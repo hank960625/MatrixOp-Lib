@@ -15,7 +15,14 @@ int main(void)
         {3, 2, 1}
     };
 
+    int C[SIZE][SIZE] = {
+        {1, 2, 3},
+        {0, 1, 4},
+        {5, 6, 0}
+    };
+
     int R[SIZE][SIZE];
+    double Inv[SIZE][SIZE];
 
     printf("A + B =\n");
     mat_add(A, B, R);
@@ -45,7 +52,21 @@ int main(void)
     mat_transpose(A,R);
     mat_print(R);
 
-    printf("\nDeterminant of A = %d\n", mat_det(A));
+    printf("\nDeterminant of C = %d\n", mat_det(C));
+
+    printf("\n");
+
+    printf("\nAdjoint of C =\n");
+    mat_adjoint(C, R);
+    mat_print(R);
+
+    printf("\nInverse of C =\n");
+    if (mat_inverse(C, Inv)) {
+        mat_print_double(Inv);
+    } else {
+        printf("C is not invertible (det = 0)\n");
+    }
+
 
     return 0;
 }
