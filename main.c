@@ -33,8 +33,16 @@ int main(void)
     mat_mulelm(A, B, R);
     mat_print(R);
 
+    printf("\n");
+
     printf("A mul B =\n");
     mat_mul(A, B, R);
+    mat_print(R);
+
+    printf("\n");
+
+    printf("A transpose =\n");
+    mat_transpose(A,R);
     mat_print(R);
 
     return 0;
