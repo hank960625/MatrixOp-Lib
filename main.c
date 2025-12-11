@@ -21,5 +21,11 @@ int main(void)
     mat_add(A, B, R);
     mat_print(R);
 
+    printf("\n");
+
+    printf("A - B =\n");
+    mat_sub(A, B, R);
+    mat_print(R);
+
     return 0;
 }
