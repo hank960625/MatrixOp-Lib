@@ -54,3 +54,16 @@ void mat_transpose(int A[SIZE][SIZE],int R[SIZE][SIZE]){
         }
     }
 }
+
+int mat_det(int A[SIZE][SIZE])
+{
+    int a = A[0][0], b = A[0][1], c = A[0][2];
+    int d = A[1][0], e = A[1][1], f = A[1][2];
+    int g = A[2][0], h = A[2][1], i = A[2][2];
+
+    int det = a * (e * i - f * h)
+            - b * (d * i - f * g)
+            + c * (d * h - e * g);
+
+    return det;
+}

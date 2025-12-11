@@ -8,7 +8,7 @@ void mat_sub(int A[SIZE][SIZE],int B[SIZE][SIZE],int R[SIZE][SIZE]);
 void mat_mulelm(int A[SIZE][SIZE],int B[SIZE][SIZE],int R[SIZE][SIZE]);
 void mat_mul(int A[SIZE][SIZE],int B[SIZE][SIZE],int R[SIZE][SIZE]);
 void mat_transpose(int A[SIZE][SIZE],int R[SIZE][SIZE]);
-
+int mat_det(int A[SIZE][SIZE]);
 
 void mat_print(int A[SIZE][SIZE]);
 

@@ -45,5 +45,7 @@ int main(void)
     mat_transpose(A,R);
     mat_print(R);
 
+    printf("\nDeterminant of A = %d\n", mat_det(A));
+
     return 0;
 }
